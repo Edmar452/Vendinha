@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="VendinhaApi"
+                   namespace="VendinhaApi.Entidades">
+	<class name="Cliente" table="cliente">
+		<id name="Id" column="id">
+			<generator class="identity" />
+		</id>
+		<property name="NomeCompleto" column="nome_completo" />
+		<property name="CPF" column="cpf" />
+		<property name="DataNascimento" column="data_nascimento" />
+		<property name="Email" column="email" />
+	</class>
+</hibernate-mapping>
